@@ -35,7 +35,7 @@
 
 /* ─── Reset ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; scroll-behavior: smooth; }
+html { font-size: 18px; scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   font-weight: 400;
@@ -271,13 +271,16 @@ header {
   margin-bottom: 0.2rem;
 }
 .coauthor {
-  font-weight: 700;
+  font-weight: 400;
   color: var(--text);
+}
+.coauthor-affil {
+  color: var(--text-muted);
 }
 
 .pub-journal {
   font-size: 0.88rem;
-  color: var(--text-muted);
+  color: var(--primary);
   margin-bottom: 0.15rem;
 }
 
@@ -294,6 +297,11 @@ header {
   margin-top: 0.15rem;
   font-style: italic;
 }
+.coverage-link {
+  color: var(--text-light);
+  text-decoration: underline;
+}
+.coverage-link:hover { color: var(--text-muted); }
 
 /* R&R badge */
 .status-badge {
@@ -314,13 +322,7 @@ header {
   border: 1px solid var(--rr-border);
 }
 
-/* Paper links: [pdf], [ssrn], etc. */
-.pub-links {
-  margin-top: 0.35rem;
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-}
+/* Paper links: [ssrn], etc. */
 .pub-link {
   font-size: 0.8rem;
   color: var(--link);
